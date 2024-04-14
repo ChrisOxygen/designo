@@ -1,0 +1,83 @@
+.inner-page-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 15px;
+
+    position: relative;
+
+    height: 308px;
+
+
+    @media only screen and (max-width: 966px) {
+        height: 200px;
+
+    }
+
+    @media only screen and (max-width: 670px) {
+        height: 250px;
+
+    }
+
+
+
+    .bg-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4969);
+        border-radius: 15px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background: #e7826bb4;
+        }
+
+    }
+
+    & :not(:first-child) {
+        z-index: 1;
+    }
+
+    &__title {
+
+        color: #FFF;
+        font-family: Jost;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px;
+        /* 120% */
+        letter-spacing: 2px;
+
+        @media only screen and (max-width: 570px) {
+            font-size: 28px;
+
+        }
+    }
+
+    &__web-design {
+        background: url("./assets/home/desktop/image-web-design-large.jpg") no-repeat center center;
+        background-size: cover;
+
+
+
+    }
+
+    &__app-design {
+        background: url("./assets/home/desktop/image-app-design.jpg") no-repeat center center;
+        background-size: cover;
+
+
+    }
+
+    &__graphics-design {
+        background: url("./assets/home/desktop/image-graphic-design.jpg") no-repeat center center;
+        background-size: cover;
+
+    }
+}

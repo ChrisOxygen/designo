@@ -1,0 +1,171 @@
+.locations-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+
+    @media only screen and (max-width: 966px) {
+        gap: 96px;
+
+
+
+    }
+}
+
+.all-locations {
+    width: 100%;
+
+    @media only screen and (max-width: 1244px) {
+        padding: 0 24px;
+    }
+
+    @media only screen and (max-width: 670px) {
+        padding: 0;
+
+
+
+    }
+
+
+    &__content-wrapper {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+}
+
+.single-location {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+
+    @media only screen and (max-width: 670px) {
+        gap: 0px;
+
+
+    }
+
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    @media only screen and (max-width: 966px) {
+        flex-direction: column-reverse;
+
+
+
+    }
+
+    &__card {
+        border-radius: 15px;
+        background: #FDF3F0;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 24px;
+
+        position: relative;
+
+
+        padding: 88px 95px;
+
+        @media only screen and (max-width: 670px) {
+            padding: 80px 24px;
+            border-radius: 0;
+            align-items: center;
+
+
+        }
+
+        .bg-circle {
+            position: absolute;
+            width: 292px;
+            height: 292px;
+            flex-shrink: 0;
+            border-radius: 292px;
+            opacity: 0.06;
+            background: linear-gradient(90deg, rgba(93, 2, 2, 0.00) 0%, rgba(93, 2, 2, 0.50) 100%);
+
+            &__1 {
+                left: 0;
+                bottom: 0;
+            }
+
+            &__2 {
+                bottom: 0;
+                left: 292px;
+            }
+        }
+
+        .location-title {
+            color: #E7816B;
+            font-family: Jost;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px;
+            /* 120% */
+        }
+
+        .location-address-contact {
+            display: flex;
+            gap: 30px;
+
+            @media only screen and (max-width: 670px) {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+
+            }
+
+            p {
+                max-width: 255px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 347px;
+        height: 324px;
+        border-radius: 15px;
+
+        background-color: red;
+
+        @media only screen and (max-width: 966px) {
+            width: 100%;
+            height: 326px;
+
+
+
+        }
+
+        @media only screen and (max-width: 670px) {
+            border-radius: 0;
+
+
+        }
+    }
+
+}
+
+.leaf-let-section {
+    display: flex;
+
+    width: 100%;
+    height: 400px;
+
+    overflow: hidden;
+}

@@ -1,0 +1,159 @@
+.footer {
+    background: #1D1C1E;
+    width: 100%;
+    padding: 72px 165px;
+
+    @media only screen and (max-width: 670px) {
+        padding: 64px 24px;
+
+
+
+    }
+
+
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__top-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ffffff11;
+
+        @media only screen and (max-width: 966px) {
+            flex-direction: column;
+            border-bottom: none;
+            padding-bottom: 0;
+
+
+
+        }
+
+        .logo-wrapper {
+            height: 24px;
+
+
+            @media only screen and (max-width: 966px) {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding-bottom: 32px;
+                border-bottom: 1px solid #ffffff11;
+
+
+
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+
+                @media only screen and (max-width: 966px) {
+                    height: 24px;
+                    width: auto;
+
+
+
+
+                }
+            }
+        }
+
+        .nav {
+            display: flex;
+
+            @media only screen and (max-width: 966px) {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 32px;
+
+
+
+
+            }
+        }
+
+        .nav-link {
+            color: #FFF;
+            font-family: Jost;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            /* 100% */
+            letter-spacing: 2px;
+        }
+    }
+
+    &__bottom-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 31px;
+
+        @media only screen and (max-width: 966px) {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 40px;
+
+
+        }
+
+        .office-adress {
+            opacity: 0.5;
+            color: #FFF;
+            font-family: Jost;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            width: 100%;
+            max-width: 350px;
+        }
+
+        .footer-contact-details {
+            opacity: 0.5;
+            color: #FFF;
+            font-family: Jost;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+            width: 100%;
+            max-width: 350px;
+
+            margin-left: 30px;
+
+            @media only screen and (max-width: 966px) {
+                margin-left: 0;
+
+
+
+            }
+        }
+
+    }
+}
+
+.social-links {
+    display: flex;
+
+    margin-left: auto;
+    gap: 14px;
+
+    @media only screen and (max-width: 966px) {
+        margin-left: 0;
+
+
+
+    }
+}

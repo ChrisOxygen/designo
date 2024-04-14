@@ -1,0 +1,64 @@
+.btn {
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 17px 25px;
+    transition: all 0.3s ease-in-out;
+
+
+    &__bg-dark {
+
+        background: #FFF;
+        color: #333136;
+
+    }
+
+    &__bg-light {
+        background: #E7816B;
+        color: #FFF;
+    }
+
+    &:hover {
+        background: #FFAD9B;
+        color: #FFF;
+    }
+}
+
+.no-bg-link {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    display: flex;
+    // height: 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    .icon {
+        display: flex;
+        // height: 22px;
+        justify-content: center;
+        align-items: center;
+        color: #E7816B;
+        font-size: 19px;
+
+    }
+}
+
+.social-icon-link {
+    font-size: 26px;
+    color: #E7816B;
+
+
+}

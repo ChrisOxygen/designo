@@ -1,0 +1,85 @@
+.page-header {
+    width: 100%;
+    position: relative;
+
+    @media only screen and (max-width: 1244px) {
+        padding: 0 24px;
+    }
+
+    @media only screen and (max-width: 670px) {
+        padding: 0;
+
+
+
+    }
+
+
+
+    .bg-shape {
+        width: 1006px;
+        height: 594px;
+        flex-shrink: 0;
+        border-radius: 297px 297px 297px 0px;
+        opacity: 0.5023;
+        background: #F1F3F5;
+
+
+        position: absolute;
+        top: 126px;
+        left: 0;
+    }
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        border-radius: 15px;
+        padding: 72px 95px;
+        background: url('./assets/shared/desktop/bg-pattern-call-to-action.svg'), #E7816B;
+        background-repeat: no-repeat;
+        background-position: center right;
+        position: relative;
+
+        @media only screen and (max-width: 670px) {
+            padding: 105px 24px;
+            border-radius: 0;
+
+
+        }
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px;
+
+        /* 100% */
+        @media only screen and (max-width: 670px) {
+            font-size: 32px;
+
+
+
+
+        }
+    }
+
+    &__desc {
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        /* 162.5% */
+
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,17 @@
+.portfolio-section {
+    width: 100%;
+    position: relative;
+
+
+    &__content-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 30px;
+        justify-items: center;
+    }
+
+    @media only screen and (max-width: 1244px) {
+        padding: 0 24px;
+    }
+
+}
