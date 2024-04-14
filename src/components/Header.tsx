@@ -9,8 +9,6 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    console.log("click", mobileMenuOpen);
-
     const handleOutsideClick = (e: MouseEvent) => {
       if (
         e.target instanceof HTMLElement &&
