@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import MobileNavToggle from "../ui/MobileNavToggle";
 import { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
@@ -7,6 +7,7 @@ import Button from "../ui/Button";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { pathname } = useLocation();
 
   useEffect(() => {
     const handleOutsideClick = (e: MouseEvent) => {
@@ -26,6 +27,10 @@ function Header() {
       document.removeEventListener("click", handleOutsideClick);
     };
   }, [mobileMenuOpen]);
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
 
   function handleMobileToggleClick() {
     setMobileMenuOpen((curr) => !curr);
